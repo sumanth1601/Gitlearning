@@ -1,0 +1,56 @@
+1. To check git 
+git --version 
+
+2.Configure Git
+git config --global user.name "Sumanth Palepu"
+
+git config --global user.email "inboxtosumanth@gmail.com"
+
+3. Verify.
+git config --global --list
+
+4. Create your first GitHub repository
+
+After logging in:
+
+Click + in the top-right.
+Select New repository.
+Repository name:
+git-learning
+Select Public.
+Do not select:
+Add a README
+Add .gitignore
+Choose a license
+
+Leave them unchecked because we'll create everything ourselves from the EC2 machine.
+
+Click Create repository.
+
+You should then see a page containing a URL similar to:
+https://github.com/sumanth1601/git-learning.git
+
+5.Check whether SSH key already exists
+ls -la ~/.ssh
+
+You may see files such as:
+id_rsa
+id_rsa.pub
+
+6.If you DON'T see an SSH key
+ssh-keygen -t ed25519 -C "inbxtosumanth@gmail.com"
+
+7. Git status 
+
+8. Git add
+Move files from working Area to staging area
+
+git add .  (to add all files)
+
+git add Git.txt (Specific file)
+
+
+9.git commit 
+A commit is basically a saved snapshot/version of your project.
+
+git commit -m "description"
